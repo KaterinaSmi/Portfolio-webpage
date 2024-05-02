@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="logo" rel="icon" href="docs/logo.png"  type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/dfc41289de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="docs/K.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Software Developer</p>
+            <h1>Hi, I'm <span>Kateriina Smirnova</span><br> from Finland</h1>
+        </div>
+    </div>
+</div>
+<!---------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="docs/myself.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> "As a junior developer, I bring a versatile skill set encompassing Python, JavaScript, SQL, CSS, and HTML, allowing me to contribute effectively to both backend and frontend development tasks."</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links "onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Desidning Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Proficient in HTML5, CSS3, and JavaScript for building responsive and interactive web applications.Proficient in Python programming language, with extensive experience in writing clean, efficient, and maintainable code.</li>
+                        <li><span>Database Management</span><br>Extensive experience writing complex SQL queries for data extraction, transformation, and analysis.
+                             Skilled in optimizing queries for performance and efficiency. Database Design: Proficient in designing normalized relational database schemas that adhere to best practices. Experience in entity-relationship modeling 
+                             and translating business requirements into database structures.</li>
+                        <li><span>Software Testing</span><br>Proficient in fundamental software testing principles, including test planning, test case design, test execution, and defect management.
+                            Experienced in applying testing methodologies such as black-box testing, white-box testing, and grey-box testing to ensure thorough test coverage and quality assurance.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>Desidning Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Have designed different web applications. Portfolio is available below </li>
+                        <li><span>Database Management</span><br>Have created 5+ maintainable and efficient databases.</li>
+                        <li><span>Software Testing</span><br>Being a part of a students testers, have detected 10+ bugs that were solved efficiently.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Lahti University of Applied Sciences</span><br>International Business, 2019</li>
+                        <li><span>Laurea University Of Applied Sciences</span><br>Developing Digital Services</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------services-------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python Portfolio</h2>
+               
+                <a href="docs/PYTHON ASSIGNMENTS Examples.docx">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>JavaScript</h2>
+                
+                <a href="docs/JavaScriptPortfolio.docx">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+               
+                <a href="docs/Database Project.docx">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------contact-------- -->
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>katja.smirnovaa@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0465672060</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/ekaterina-smirnova-0265a4237/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/katyamav/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/KaterinaSmi"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="docs/ Smirnova.pdf" download="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form class="contact-from" action="https://formspree.io/f/xbjnqpwk" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Ekaterina Smirnova.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</div>
+<script src='https://smtpjs.com/v3/smtp.js'></script>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+</body>
+</html>
